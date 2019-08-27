@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="Agent_Web_Demo_Files/jquery-ui.css" />
+		<script src="Agent_Web_Demo_Files/jquery-1.10.2.min.js"></script>
+		<script src="Agent_Web_Demo_Files/jquery-ui.js"></script>
+		<!--<script type='text/javascript' src="../../../dist/Agents/Web/telerik_test_studio_js_agent.js"></script>-->
+	</head>
+	<body>
+
+		<select id="testSelect" multiple=true>
+			<option value="val1">option 1</option>
+			<option value="val2">option 2</option>
+			<option value="val3">option 3</option>
+		</select>	
+		<br/>
+		
+		<button id="testButton"  name='testButtonName' class='testButtonClassName'>button</button> <br/>
+		<div id='testButtonDiv'></div> 
+		<script type='text/javascript'>
+
+			$("#testButton").click(function(e) {
+				$('#testButtonDiv').text($('#testButtonDiv').text() + ' | clicked |');
+			});
+
+			$("#testButton").dblclick(function(e) {
+				$('#testButtonDiv').text($('#testButtonDiv').text() + ' | dbl clicked |');
+			});
+
+			$("#testButton").mouseover(function(e) {
+				$('#testButtonDiv').text($('#testButtonDiv').text() + ' | mouse over |');
+			});
+
+			$("#testButton").keypress(function(e) {
+				$('#testButtonDiv').text($('#testButtonDiv').text() + ' | keypress:' + e.which + ' |');
+			});
+		</script>
+		<br/>
+		
+		<a id="testHref" href="http://www.telerik.com">telerik</a>
+		<br/>
+		
+		<input id="testTextInput" value="textBox" type="text"/>
+		<br/>
+		<input id="testSubmitInput" value="submit" type="submit"/>
+		<br/>
+		<input id="testCheckInput" value="checkbox" type="checkbox"/>
+		<br/>
+		
+		<div>
+			<input id="testRadioInput1" type="radio" name="radioGroup" checked="checked"/>
+			<input id="testRadioInput2" type="radio" name="radioGroup" />
+		</div>		
+		<br/>
+		
+		<table border='1'>
+			<tr>
+				<td>Row 1 Col 1</td>
+				<td>Row 1 Col 2</td>
+			</tr>
+			<tr>
+				<td>Row 2 Col 1</td>
+				<td>Row 2 Col 2</td>
+				<td>Row 2 Col 3</td>
+			</tr>
+			<tr>
+				<td>Row 3 Col 1</td>
+				<td>Row 3 Col 2</td>
+				<td>Row 3 Col 3</td>
+				<td>Row 3 Col 4</td>
+			</tr>
+		</table>
+
+		<div id="dragMe" style="cursor: default; background-color: yellow; width:100px; height:30px;">Drag Me</div> <br/><br/><br/>
+		<div id="dragTo" style="background-color:red; width:100px; height:30px;">Target</div>
+		<script type='text/javascript'>
+			$("#dragMe").draggable();
+		</script>
+		<br/>
+		
+		<audio controls>
+		  <source src="Agent_Web_Demo_Files/audio.ogg" type="audio/mpeg"/>
+		  Your browser does not support this audio format.
+		</audio>
+		<br/>
+		
+		<hr/>
+
+		<button onclick="telerik_test_studio_js_agent.start('ws://localhost:8081', '42eee5d5-0c54-4732-899c-b0c619e2dbc6');">Connect</button> </br>
+		<button onclick="telerik_test_studio_js_agent.stop();">Disconnect</button> </br>
+	</body>
+</html>

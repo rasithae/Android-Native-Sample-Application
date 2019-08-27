@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="14"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnHOME"
+        android:text="HOME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#009933"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <Switch
+        android:id="@+id/switchICS14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="switch"/>
+
+    <TextView
+        android:id="@+id/icsSwitchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:contentDescription="Switch OFF"
+        android:text="Switch OFF"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Background"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SlidingDrawer
+        android:id="@+id/drawer1"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:handle="@+id/handle1"
+        android:content="@+id/content1"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@id/handle1"
+            android:layout_width="44dip"
+            android:layout_height="44dip"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:id="@id/content1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vertical Drawer"/>
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+    <SlidingDrawer
+        android:id="@+id/drawer2"
+        android:layout_width="250dip"
+        android:layout_height="match_parent"
+        android:handle="@+id/handle2"
+        android:content="@+id/content2"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <View
+            android:id="@id/handle2"
+            android:layout_width="44dip"
+            android:layout_height="44dip"
+            android:background="@android:color/white"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@id/content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horizontal Drawer"/>
+
+        </LinearLayout>
+
+
+    </SlidingDrawer>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Test Application [Native]</string>
+    <string-array name="main_screen_list_array">
+        <item >Buttons</item>
+        <item >Toggle Buttons</item>
+        <item >TextBoxes</item>
+        <item >Rating Bar</item>
+        <item >Radio Buttons</item>
+        
+    </string-array>
+    <string-array name="temp_list_array">
+        <item >Item 1</item>
+        <item >Item 2</item>
+        <item >Item 3</item>
+        <item >Item 4</item>
+        <item >Item 5</item>
+        <item >Item 6</item>
+        <item >Item 7</item>
+        <item >Item 8</item>
+        <item >Item 9</item>
+        <item >Item 10</item>
+        <item >Item 11</item>
+        <item >Item 12</item>
+        <item >Item 13</item>
+        <item >Item 14</item>
+        <item >Item 15</item>
+        <item >Item 16</item>
+    </string-array>
+    <string name="btn_gobuttons">Button Test Page</string>
+    <string name="btn_test">Test Button</string>
+    <string name="secondary_btn1">Button</string>
+    <string name="secondary_checkbox1">CheckBox</string>
+    <string name="secondary_radiobtn1">RadioButton</string>
+
+    <string name="textViewHint">Type something</string>
+    <string name="textViewInitialContent">My Text View</string>
+    <string name="editTextInitialContent">EditText: Edit Text Here</string>
+    <string name="autoCompleteInitialContent">AutoCompleteTextView: Autocomplete Me</string>
+    <string name="multiAutoCompleteHint">MultiAutoCompleteTextView: All Completions</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Pluto</item>
+    </string-array>
+    <string name="title_activity_xwalk">XWalkActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
